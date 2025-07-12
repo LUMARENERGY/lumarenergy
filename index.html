@@ -6,206 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ŁUMAR ENERGY</title>
   <style>
-    :root {
-      --primary: #2f2f2f;
-      --accent: #555;
-      --light: #f4f4f4;
-      --white: #fff;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: var(--light);
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--primary);
-      color: var(--white);
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header img.logo {
-      width: 120px;
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      font-size: 2.2em;
-      margin: 10px 0 5px;
-    }
-
-    header p {
-      font-size: 1.1em;
-      margin: 0;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .banner {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto 30px;
-      border-radius: 10px;
-    }
-
-    .two-columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-    }
-
-    .column {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .services ul {
-      padding-left: 20px;
-    }
-
-    .highlight {
-      background: var(--white);
-      border-left: 6px solid var(--accent);
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-      border-radius: 4px;
-    }
-
-    .contact-form button {
-      padding: 12px;
-      background: var(--primary);
-      color: var(--white);
-      border: none;
-      cursor: pointer;
-      font-size: 1rem;
-      border-radius: 4px;
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .gallery img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 6px;
-      box-shadow: 0 0 6px rgba(0,0,0,0.1);
-    }
-
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      margin-top: 20px;
-      border-radius: 6px;
-    }
-
-    footer {
-      background: #eaeaea;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      .two-columns {
-        flex-direction: column;
-      }
-    }
+    body { font-family: Arial, sans-serif; background: #f8f8f8; margin: 0; color: #333; }
+    header { background: #333; color: white; padding: 20px; text-align: center; }
+    header img { height: 60px; }
+    main { padding: 20px; max-width: 1000px; margin: auto; }
+    .intro, .contact, .mapka { margin-bottom: 30px; text-align: center; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .gallery img { width: 300px; border-radius: 8px; box-shadow: 0 0 10px #aaa; }
+    footer { background: #333; color: white; padding: 10px; text-align: center; }
   </style>
 </head>
 <body>
-
-<header>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Laser_warning_symbol.svg/1024px-Laser_warning_symbol.svg.png" alt="Logo" class="logo">
-  <h1>ŁUMAR ENERGY Sp. z o.o.</h1>
-  <p>Nowoczesne czyszczenie laserowe – bezpiecznie, ekologicznie, bez chemii</p>
-</header>
-
-<section>
-  <img src="https://images.unsplash.com/photo-1613141412019-e6a27da5f3b4?auto=format&fit=crop&w=1200&q=80" alt="Laser cleaning" class="banner">
-
-  <h2>O nas</h2>
-  <p>Jesteśmy mobilną firmą z Radomia, specjalizującą się w precyzyjnym czyszczeniu laserowym dla przemysłu. Działamy na terenie Radomia i okolic, oferując usługi czyszczenia bez użycia chemii, bez demontażu sprzętu i bez szkody dla środowiska.</p>
-</section>
-
-<section class="services">
-  <h2>Nasze usługi</h2>
-  <div class="two-columns">
-    <div class="column">
-      <ul>
-        <li>Czyszczenie form piekarniczych</li>
-        <li>Oczyszczanie rusztów i pieców</li>
-        <li>Usuwanie rdzy, farby i zabrudzeń przemysłowych</li>
-        <li>Czyszczenie narzędzi i maszyn</li>
-        <li>Renowacja elementów stalowych i aluminiowych</li>
-      </ul>
-    </div>
-    <div class="column highlight">
-      <h3>Dlaczego laser?</h3>
-      <p>✔️ Brak potrzeby demontażu</p>
-      <p>✔️ Brak użycia chemikaliów</p>
-      <p>✔️ Precyzyjne i bezpieczne dla powierzchni</p>
-      <p>✔️ Ekologiczne i szybkie</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Galeria przykładowa</h2>
-  <div class="gallery">
-    <img src="https://cdn.pixabay.com/photo/2022/03/20/09/37/laser-7079427_1280.jpg" alt="Laser czyszczenie">
-    <img src="https://cdn.pixabay.com/photo/2020/07/02/17/10/machine-5364402_1280.jpg" alt="Czyszczenie przemysłowe">
-    <img src="https://cdn.pixabay.com/photo/2017/03/14/08/57/machine-2147327_1280.jpg" alt="Maszyna">
-  </div>
-</section>
-
-<section class="contact">
-  <h2>Kontakt</h2>
-  <p><strong>Lokalizacja:</strong> Radom i okolice</p>
-  <p><strong>Telefon:</strong> <a href="tel:+48881919222">+48 881 919 222</a></p>
-  <p><strong>Email:</strong> <a href="mailto:lumar.energy@gmail.com">lumar.energy@gmail.com</a></p>
-
-  <div class="contact-form">
-    <h3>Napisz do nas</h3>
-    <form>
-      <input type="text" placeholder="Imię i nazwisko" required>
-      <input type="email" placeholder="Adres e-mail" required>
-      <textarea rows="4" placeholder="Wiadomość" required></textarea>
-      <button type="submit">Wyślij</button>
-    </form>
-  </div>
-
-  <h3>Gdzie działamy?</h3>
-  <iframe src="https://maps.google.com/maps?q=Radom,Polska&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
-</section>
-
-<footer>
-  &copy; 2025 ŁUMAR ENERGY Sp. z o.o. Wszystkie prawa zastrzeżone.
-</footer>
-
+  <header>
+    <img src="images/logo.png" alt="Logo" />
+    <h1>ŁUMAR ENERGY sp. z o.o.</h1>
+    <p>Precyzyjne czyszczenie laserowe – szybko, ekologicznie i bezpiecznie</p>
+  </header>
+  <main>
+    <section class="intro">
+      <p>Jesteśmy mobilną firmą z Radomia, która oferuje nowoczesne czyszczenie powierzchni przy użyciu technologii lasera ciągłego.</p>
+      <p>Specjalizujemy się w czyszczeniu elementów piekarniczych, form, rusztów, pieców oraz innych powierzchni przemysłowych – bez użycia chemii i bez demontażu sprzętu.</p>
+    </section>
+    <section class="gallery">
+      <img src="images/czyszczenie1.jpg" alt="Czyszczenie 1" />
+      <img src="images/czyszczenie2.jpg" alt="Czyszczenie 2" />
+      <img src="images/czyszczenie3.jpg" alt="Czyszczenie 3" />
+    </section>
+    <section class="contact">
+      <h2>Kontakt</h2>
+      <p>📞 +48 881 919 222</p>
+      <p>📧 lumar.energy@gmail.com</p>
+      <p>📍 Radom i okolice</p>
+    </section>
+    <section class="mapka">
+      <h3>Nasza lokalizacja:</h3>
+      <img src="images/mapa.png" alt="Mapa" style="max-width: 100%; border: 1px solid #ccc;" />
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 ŁUMAR ENERGY sp. z o.o.
+  </footer>
 </body>
 </html>
